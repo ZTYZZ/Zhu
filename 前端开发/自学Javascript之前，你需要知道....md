@@ -51,6 +51,10 @@ Javascript的屎就捡到这里了。
 
 怎么编写JavaScript代码呢？其实用任何编辑器都可以。
 
+- webstorm
+
+  据说是最好的前端开发工具，没有之一，强烈推荐。
+
 - Visual Studio code 
 
   微软出品。内置JavaScript，可以使用。推荐。
@@ -62,6 +66,8 @@ Javascript的屎就捡到这里了。
 - Notepad++
 
   同上。
+
+下面我们分别熟悉一下，webstorm 和 VScode 两款。
 
 ## 如何使用Visual Studio Code 编写Javascript？
 
@@ -289,6 +295,42 @@ cmd，然后输入`node --version`出现版本号就证明安装成功了。
 
 
 
+## webstorm的使用
+
+#### 首先进行安装
+
+在官网上面下载相应的版本，进行安装即可。
+
+接下来是进行相关环境的搭建。（理论上，现在就可以用了,但是在实际的开发中，需要很多常见的环境配置）
+
+#### 安装node.js
+
+同样的，我们需要安装node.js。同上面的步骤
+
+#### 安装Babel
+
+什么是babel呢？它是JavaScript的编译器，此工具能够将ES6代码转换到ES5代码，当检测到项目中有代码改动，它就会自动的在dist目录中创建一样的文件，进行代码的转换。
+
+![1547631062914](assets/1547631062914.png)
+
+使用以上命令来进行安装，注意 如果使用`-g`则代表的是全局安装，一般不建议全局安装，所以我们只在相应的项目下，安装Babel即可。如下
+
+在安装中，可以使用`cnpm`代替`npm`，这是淘宝做的一个镜像npm，能够保证更快的下载。[官方网站：淘宝NPM镜像](https://npm.taobao.org/)
+
+
+
+首先安装淘宝的cnpm,输入命令`npm install -g cnpm --registry=https://registry.npm.taobao.org`
+
+打开webstorm terminal 来进行配置。
+
+输入上面的命令，即可安装Babel。安装之后，只对当前的项目有用。
+
+安装成功后，还需要进行File Watcher 更改Babel路径。（mac下 是bin 目录下的 babel可执行文件，windows下为 babel.cmd 路径。）
+
+【小问题】我在安装的时候，出现了一些小问题，出现了如下提示`Couldn't find preset "@babel/env" relative to directory`
+
+后来发现 在 设置路径的时候，需要将arguments 里面的@babel去掉.就好了。
+
 #### 4. 调试JavaScript脚本（了解chrome）
 
 [我学习的时候是按照这篇文章走的，并做部分修改，进行总结！](http://wiki.jikexueyuan.com/project/chrome-devtools/debugging-javascript.html)
@@ -341,6 +383,8 @@ File tree （文件树）Per-file tabs（每个文件标签）show drawer（显�
 2019.1.9 修改无图的问题
 
 ​		增加chrome DevTools的使用。
+
+2019.1.17 修改webstrom强大工具的使用以及babel 强大工具。
 
 
 

@@ -26,7 +26,7 @@ justify-all：强制最后一行两端对齐
 match-parent：和inherit类似，区别在于start和end的值根据父元素的direction确定，并被替换为恰当的left或者right。
 ```
 
-
+我们在使用的使用要在**容器下使用**，如果在span 这种标签中使用，是不会进行水平居中的。
 
 > **单个内联元素**
 
